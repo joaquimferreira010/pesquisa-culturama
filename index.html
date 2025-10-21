@@ -116,6 +116,23 @@
                 <br>
                 <input id="x" type="checkbox" name="social" value="x">
                 <label for="x">X</label>
+
+                <br>
+                <label for="musicStyle">Estilo musical:</label>
+                <input list="stilyTypes" type="text" name="userMusicStyle" id="musicStyle">
+                <datalist id="stilyTypes">
+                    <option value="Pop"></option>
+                    <option value="Rock"></option>
+                    <option value="Sertanejo"></option>
+                    <option value="Funk"></option>
+                    <option value="Clássica"></option>
+                    <option value="Jazz"></option>
+                    <option value="Eletrônica"></option>
+                    <option value="Hip Hop"></option>
+                </datalist>
+                <br>
+                <label for="favoriteColor"></label>
+                <input type="color" name="userFavoriteColor" id="favoriteColor">
             </fieldset>
 
             <button type="submit">Enviar</button>
