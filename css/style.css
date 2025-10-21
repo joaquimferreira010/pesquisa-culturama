@@ -62,3 +62,26 @@ button {
     border: 1px solid #ccc;    
     cursor: pointer;
 }
+
+input:focus {
+    border-color: cornflowerblue;
+    outline: none;
+}
+
+input:valid {
+    border-color: green;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+button[type="submit"]:hover {
+    background-color: green;
+    color: #fff;
+}
+
+button[type="reset"]:hover {
+    background-color: orangered;
+    color: #fff;
+}
