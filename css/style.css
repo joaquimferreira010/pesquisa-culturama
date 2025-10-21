@@ -44,6 +44,15 @@ label {
     display: inline-block;
 }
 
+input[type="tel"]{
+    margin-bottom: 0;
+}
+
+small{
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
 /* INPUTS ESPECIAIS */
 input[type="radio"], input[type="checkbox"] {
     width: auto;
@@ -51,16 +60,6 @@ input[type="radio"], input[type="checkbox"] {
 input[type="color"] {
     width: 40px;
     padding: 0px 5px;
-}
-
-/* BOTÕES */
-button {
-    width: 100px;
-    height: 30px;
-    margin-right: 10px;
-    background-color: #fff;
-    border: 1px solid #ccc;    
-    cursor: pointer;
 }
 
 input:focus {
@@ -74,6 +73,16 @@ input:valid {
 
 input:invalid {
     border-color: red;
+}
+
+/* BOTÕES */
+button {
+    width: 100px;
+    height: 30px;
+    margin-right: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;    
+    cursor: pointer;
 }
 
 button[type="submit"]:hover {
