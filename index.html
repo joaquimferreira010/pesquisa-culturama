@@ -3,10 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="culturama-favico.png">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <title>Pesquisa Culturama</title>
 </head>
 <body>
     <head>
+        <img src="img/logo-culturama.png" alt="Logo Culturama">
         <h1>Pesquisa Online</h1>
     </head>
     <section>
@@ -17,29 +25,27 @@
                 
                 <label for="name">Nome</label>
                 <input id="name" type="text" name="userName" placeholder="Nome" required>
-                <br><br>
-
+                <br>
+                
                 <label for="age">Idade</label>
                 <input id="age" type="number" name="userAge" placeholder="Idade" min="12" max = "100" required>
-                <br><br>
+                <br>                
 
                 <label for="birthDate">Data de Nascimento</label>
                 <input id="birthDate" type="date" name="userBirthDate">
-                <br><br>
-
+                <br>
+                
                 <label for="email">Email</label>
                 <input id="email" type="email" name="userEmail" required>
-                <br><br>
-
+                <br>
+                
                 <label for="phoneNumber">Telefone</label>
-                <input id="phoneNumber" type="number" name="userPhoneNumber" placeholder="DDD + Número sem espaço ou hifem" pattern="[0-9]{11}" required>
-                <br><br>
+                <input id="phoneNumber" type="number" name="userPhoneNumber" placeholder="DDD + Número sem espaço ou hifem" pattern="[0-9]{11}" required title="Digite o DDD seguido do número, sem espaços ou hifens. Exemplo: 11999999999">
+                <br>
 
                 <label for="image">Upload de foto</label>
                 <input id="image" type="file" name="UserImage" accept="image/*">
-                <br><br>
-
-
+                
             </fieldset>
             <br><br>
 
@@ -56,7 +62,9 @@
 
                 <input id="notInformed" type="radio" name="userGender" value="notInformed">
                 <label for="notInformed">Prefiro não informar</label>
-                <label for="maritalStatus">Estado civiel:</label>
+                <br>
+
+                <label for="maritalStatus">Estado civil:</label>
                 <select id="maritalStatus" name="UserMaritalStatus">
                     <option value="notInformed">Selecione...</option>
                     <option value="casado">Casado</option>
@@ -64,6 +72,7 @@
                     <option value="divorciado">Divorsiado</option>
                     <option value="uniaoEstavel">União Estável</option>
                 </select>
+                <br>
 
                 <label for="state">Estado:</label>
                 <select id="state" name="userState" required>
@@ -95,6 +104,7 @@
                     <option value="sergipe">Sergipe</option>
                     <option value="tocantins">Tocantins</option>
                 </select>
+                <br>
 
                 <label for="city">Cidade:</label>
                 <input id="city" type="text" name="userCity">
@@ -131,7 +141,7 @@
                     <option value="Hip Hop"></option>
                 </datalist>
                 <br>
-                <label for="favoriteColor"></label>
+                <label for="favoriteColor">Selecione uma Cor:</label>
                 <input type="color" name="userFavoriteColor" id="favoriteColor">
             </fieldset>
 
